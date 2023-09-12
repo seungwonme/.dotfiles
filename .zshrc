@@ -119,6 +119,11 @@ export PATH=/usr/local/bin:$PATH
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Setting
+
+alias op="~/Setting/ob_push.sh"
+alias o="~/setting/ob_pull.sh | open ~/Applications/Obsidian.app"
+
 # 42 Seoul
 export MAIL='seunan@student.42seoul.kr'
 alias norm='norminette -R CheckForbiddenSourceHeader'
@@ -148,8 +153,3 @@ alias gb='git branch'
 alias gig='git config core.ignorecase false'
 
 alias a='./a.out | cat -e'
-
-# Setting
-
-alias op="~/setting/ob_push.sh"
-alias o="echo `~/setting/ob_pull.sh` | open ~/Applications/Obsidian"
