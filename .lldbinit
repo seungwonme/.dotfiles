@@ -1,0 +1,26 @@
+# 변수 값을 확인하는 명령어
+command alias bv expression -l swift -- b
+
+# 변수 주소를 확인하는 명령어
+command alias ba expression -l swift -- &b
+
+# 변수의 바이트 값을 확인하는 명령어
+command alias bb memory read -c 1 -t x -- b
+
+# 스택 트레이스를 상세하게 표시하는 명령어
+command alias bt2 thread backtrace -c 2
+
+# 현재 스레드 정보를 표시하는 명령어
+command alias ct thread info
+
+# 메모리 주소 범위를 검색하는 명령어
+command alias findmem memory find
+
+# 레지스터 값을 확인하는 명령어
+command alias reg register read
+
+# 스레드 목록을 표시하는 명령어
+command alias tl thread list
+
+# 중단점 목록을 표시하는 명령어
+command alias bl breakpoint list
