@@ -146,3 +146,8 @@ alias gb='git branch'
 alias gig='git config core.ignorecase false'
 
 alias a='./a.out | cat -e'
+
+# Setting
+
+alias opush="~/setting/ob_push.sh"
+alias o="echo `~/setting/ob_pull.sh` | open ~/Applications/Obsidian"
