@@ -122,7 +122,7 @@ export PATH=/usr/local/bin:$PATH
 # Setting
 
 alias op="~/Setting/ob_push.sh"
-alias o="~/setting/ob_pull.sh | open ~/Applications/Obsidian.app"
+alias o="~/Setting/ob_pull.sh | open /Applications/Obsidian.app"
 
 # 42 Seoul
 export MAIL='seunan@student.42seoul.kr'
