@@ -1,0 +1,6 @@
+{
+  "[c]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "keyhr.42-c-format"
+  }
+}
