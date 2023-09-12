@@ -151,5 +151,5 @@ alias a='./a.out | cat -e'
 
 # Setting
 
-alias opush="~/setting/ob_push.sh"
+alias op="~/setting/ob_push.sh"
 alias o="echo `~/setting/ob_pull.sh` | open ~/Applications/Obsidian"
