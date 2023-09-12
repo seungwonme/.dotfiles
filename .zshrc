@@ -120,6 +120,7 @@ export PATH=/usr/local/bin:$PATH
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # 42 Seoul
+export MAIL='seunan@student.42seoul.kr'
 alias norm='norminette -R CheckForbiddenSourceHeader'
 alias francinette='~/francinette/tester.sh'
 alias paco='~/francinette/tester.sh'
@@ -137,6 +138,7 @@ alias gsh='git stash'
 alias gp='git push'
 alias gpl='git pull'
 alias gm='git merge'
+alias gcl='git clone'
 alias gd='git diff'
 alias gl='git log'
 alias glo='git log --oneline'
