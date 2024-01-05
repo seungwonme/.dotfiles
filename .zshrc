@@ -8,14 +8,20 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export PATH=/usr/local/bin:$PATH
+
+# npm global path
+export PATH=~/.npm-global/bin:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="gnzh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -87,6 +93,17 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# 42 Seoul
+export MAIL='seunan@student.42seoul.kr'
+
+# My export
+export EDITOR=/usr/local/bin/nvim
+export github='seungwonme'
+export python3=/opt/homebrew/bin/python3
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -110,46 +127,48 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
-alias vi="nvim"
-alias vimd="nvim -d"
-export EDITOR=/usr/local/bin/nvim
-export PATH=/usr/local/bin:$PATH
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Setting
-
-alias op="~/.setting/ob_push.sh"
-alias o="~/.setting/ob_pull.sh | open /Applications/Obsidian.app"
-
-# 42 Seoul
-export MAIL='seunan@student.42seoul.kr'
+# 42 alias
 alias norm='norminette -R CheckForbiddenSourceHeader'
 alias francinette='~/francinette/tester.sh'
 alias paco='~/francinette/tester.sh'
 alias pacos='paco --strict'
 
-# git alias
+# Compile alias
 alias gcw='gcc -Wall -Wextra -Werror'
-alias gcf='gcc -g3 -fsanitize=memory -Wall -Wextra -Werror'
-alias gpw='gpp -Wall -Wextra -Werror'
-alias gpf='gpp -g3 -fsanitize=memory -Wall -Wextra -Werror'
+alias gcf='gcc -g3 -fsanitize=address -Wall -Wextra -Werror'
+alias gpp='g++'
+alias gpw='g++ -Wall -Wextra -Werror'
+alias gpf='g++ -g3 -fsanitize=address -Wall -Wextra -Werror'
+
+# Git alias
 alias gs='git status'
 alias ga='git add'
+alias gac='git add . && git commit -m'
 alias gc='git commit'
-alias gsh='git stash'
+alias gcm='git commit -m'
+alias gca='git commit --amend'
 alias gp='git push'
 alias gpl='git pull'
 alias gm='git merge'
 alias gcl='git clone'
-alias gd='git diff'
 alias gl='git log'
 alias glo='git log --oneline'
 alias gch='git checkout'
 alias gsw='git switch'
+alias gr='git reset'
+alias gsh='git stash'
+alias gd='git diff'
 alias gb='git branch'
 alias gig='git config core.ignorecase false'
 
+# My alias
 alias a='./a.out | cat -e'
+alias leak='leaks -atExit -- '
+alias dev='cd ~/dev'
+alias ansi="~/.setting/ansi"
+alias vim="nvim"
+alias vi="nvim"
+alias vimd="nvim -d"
+alias python="python3.11"
+alias py="python3.11"

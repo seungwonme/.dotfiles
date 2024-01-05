@@ -1,0 +1,122 @@
+{
+	"c!": {
+		"prefix": "c!",
+		"body": [
+			"#include <iostream>",
+			"#include <algorithm>",
+			"using namespace std;",
+			"",
+			"int\tmain(void)",
+			"{",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "make main func"
+	},
+	"ret": {
+		"prefix": "ret",
+		"body": [
+			"return $0;"
+		],
+		"description": "return"
+	},
+	"include" : {
+		"prefix": "ic",
+		"body": [
+			"#include $0"
+		],
+		"description": "include"
+	},
+	"define" : {
+		"prefix": "def",
+		"body": [
+			"#define $1 $2"
+		],
+		"description": "define"
+	},
+	"leak": {
+		"prefix": "leaks",
+		"body": [
+			"// export MallocStackLogging=1 find leaks after unset MallocStackLogging",
+			"// if you want more info about leaks use gcc -g option",
+			"// while true; do leaks minishell; sleep 1; done;",
+			"void\tleak(void)",
+			"{",
+			"\tsystem(\"leaks --list a.out$1\");",
+			"}",
+			"$2atexit(leak);"
+		],
+		"description": "check memory leaks"
+	},
+	"rm": {
+		"prefix": "rm",
+		"body": [
+			"$0",
+			"remove(\"a.out\");",
+			"remove(\"tempCodeRunnerFile.cpp\");"
+		],
+		"description": "remove files"
+	},
+	"ios": {
+		"prefix": "ios",
+		"body": [
+			"ios::sync_with_stdio(false), cin.tie(nullptr)"
+		],
+		"description": "cin/cout에서 입출력으로 인한 시간초과를 막기 위해 사용 (절대 cout, printf를 섞어쓰면 안된다.)"
+	},
+	"Algorithm": {
+		"prefix": "algo",
+		"body": [
+					"#include <iostream>",
+					"#include <algorithm>",
+					"using namespace std;",
+					"",
+					"#define ll long long",
+					"#define f(i, n) for (int i = 0; i < n; i++)",
+					"",
+					"int\tmain(void)",
+					"{",
+					"\tios::sync_with_stdio(0), cin.tie(0);",
+					"\t",
+					"\t$0",
+					"\treturn 0;",
+					"}"
+		],
+		"description": "yeonkwan's algorithm template"
+	},
+	"bfs": {
+		"prefix": "bfs",
+		"body": [
+				"#define X second",
+				"#define Y first",
+				"",
+				"const int dx[4] = {1, 0, -1, 0};",
+				"const int dy[4] = {0, 1, 0, -1};"
+		],
+		"description": "bfs"
+	},
+	"dualfor": {
+		"prefix": "ff",
+		"body": [
+			"f(i, n$1)",
+			"{",
+			"\tf(j, m$2)",
+			"\t{",
+			"\t\t$3",
+			"\t}",
+			"}"
+		],
+		"description": "dualfor"
+	},
+	"forauto": {
+		"prefix": "fa",
+		"body": [
+			"for (auto i$1 : $2)",
+			"{",
+			"\t$3",
+			"}"
+		],
+		"description": "dualfor"
+	}
+}

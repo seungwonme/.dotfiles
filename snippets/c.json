@@ -1,0 +1,54 @@
+{
+	"c!": {
+		"prefix": "c!",
+		"body": [
+			"#include <stdio.h>",
+			"#include <stdlib.h>",
+			"#include <string.h>",
+			"",
+			"int\tmain(void)",
+			"{",
+			"\t$0",
+			"\treturn (0);",
+			"}"
+		],
+		"description": "make main func"
+	},
+	"ic": {
+		"prefix": "ic",
+		"body": [
+			"#include $0"
+		],
+		"description": "make main func"
+	},
+	"ret": {
+		"prefix": "ret",
+		"body": [
+			"return ($0);"
+		],
+		"description": "return"
+	},
+	"leak": {
+		"prefix": "leaks",
+		"body": [
+			"// export MallocStackLogging=1 find leaks after unset MallocStackLogging",
+			"// if you want more info about leaks use gcc -g option",
+			"// while true; do leaks a.out; sleep 1; done;",
+			"void\tleak(void)",
+			"{",
+			"\tsystem(\"leaks --list a.out$1\");",
+			"}",
+			"$2atexit(leak);"
+		],
+		"description": "check memory leaks"
+	},
+	"rm": {
+		"prefix": "rm",
+		"body": [
+			"$0",
+			"remove(\"a.out\");",
+			"remove(\"tempCodeRunnerFile.c\");"
+		],
+		"description": "remove files"
+	}
+}
