@@ -89,6 +89,9 @@ plugins=(
   zsh-autosuggestions
   )
 
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -100,9 +103,6 @@ export MAIL='seunan@student.42seoul.kr'
 export EDITOR=/usr/local/bin/nvim
 export github='seungwonme'
 export python3=/opt/homebrew/bin/python3
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
