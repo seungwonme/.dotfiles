@@ -14,6 +14,40 @@ else
   echo "- the directory added. : ~/goinfre/blog"
 fi
 
+if [[ -d "$HOME/goinfre/math" ]]
+then
+  echo "- the directory exists. : ~/goinfre/math"
+else
+  git clone https://github.com/seungwonme/Mathematic.git $HOME/goinfre/math
+  echo "- the directory added. : ~/goinfre/math"
+fi
+
+if [[ -d "$HOME/goinfre/math" ]]
+then
+  echo "- the directory exists. : ~/goinfre/math"
+else
+  git clone https://github.com/seungwonme/Mathematic.git $HOME/goinfre/math
+  echo "- the directory added. : ~/goinfre/math"
+fi
+
+if [[ -d "$HOME/goinfre/Effective-CPP" ]]
+then
+  echo "- the directory exists. : ~/goinfre/Effective-CPP"
+else
+  git clone https://github.com/seungwonme/Effective-CPP.git $HOME/goinfre/Effective-CPP
+  echo "- the directory added. : ~/goinfre/Effective-CPP"
+fi
+
+if [[ -d "$HOME/goinfre/cpp" ]]
+then
+  echo "- the directory exists. : ~/goinfre/cpp"
+else
+  git clone https://github.com/seungwonme/C-CPP.git $HOME/goinfre/cpp
+  echo "- the directory added. : ~/goinfre/cpp"
+fi
+
+
+
 if [[ -d "$HOME/goinfre/.brew" ]]
 then
   echo "- the directory exists. : ~/goinfre/.brew"
