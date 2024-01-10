@@ -1,0 +1,123 @@
+{
+	"code-runner.executorMap": {
+		"javascript": "node",
+		"java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+		"c": "cd $dir && gcc $fileName && $dir/a.out",
+		"zig": "zig run",
+		"cpp": "cd $dir && g++ $fileName && $dir/a.out",
+		"objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"php": "php",
+		"python": "python3 -u",
+		"perl": "perl",
+		"perl6": "perl6",
+		"ruby": "ruby",
+		"go": "go run",
+		"lua": "lua",
+		"groovy": "groovy",
+		"powershell": "powershell -ExecutionPolicy ByPass -File",
+		"bat": "cmd /c",
+		"shellscript": "bash",
+		"fsharp": "fsi",
+		"csharp": "scriptcs",
+		"vbscript": "cscript //Nologo",
+		"typescript": "ts-node",
+		"coffeescript": "coffee",
+		"scala": "scala",
+		"swift": "swift",
+		"julia": "julia",
+		"crystal": "crystal",
+		"ocaml": "ocaml",
+		"r": "Rscript",
+		"applescript": "osascript",
+		"clojure": "lein exec",
+		"haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+		"rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+		"racket": "racket",
+		"scheme": "csi -script",
+		"ahk": "autohotkey",
+		"autoit": "autoit3",
+		"dart": "dart",
+		"pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		"d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+		"haskell": "runghc",
+		"nim": "nim compile --verbosity:0 --hints:off --run",
+		"lisp": "sbcl --script",
+		"kit": "kitc --run",
+		"v": "v run",
+		"sass": "sass --style expanded",
+		"scss": "scss --style expanded",
+		"less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+		"FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"sml": "cd $dir && sml $fileName"
+	},
+	"editor.tokenColorCustomizations": {
+		"comments": "#81aebe"
+	},
+	"emmet.variables": {
+		"lang": "ko"
+	},
+	"[c]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+	"code-runner.runInTerminal": true,
+	"code-runner.saveFileBeforeRun": true,
+	"editor.renderWhitespace": "all",
+	"files.insertFinalNewline": true,
+	"editor.minimap.enabled": false,
+	"explorer.sortOrder": "type",
+	"editor.insertSpaces": false,
+	"lldb.showDisassembly": "never",
+	"lldb.launch.cwd": "${fileDirname}",
+	"debug.inlineValues": "on",
+	"debug.onTaskErrors": "debugAnyway",
+	"hexeditor.columnWidth": 16,
+	"hexeditor.showDecodedText": true,
+	"hexeditor.defaultEndianness": "little",
+	"hexeditor.inspectorType": "aside",
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"git.openRepositoryInParentFolders": "always",
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"extensions.ignoreRecommendations": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.startupEditor": "none",
+	"update.showReleaseNotes": false,
+	"editor.inlineSuggest.enabled": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"42header.email": "seunan@student.42seoul.kr",
+	"42header.username": "seunan",
+	"editor.fontFamily": "'D2Coding ligature', 'D2Coding', 'Fira Code', 'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+	"editor.fontSize": 14,
+	"editor.fontLigatures": true,
+	"debug.disassemblyView.showSourceCode": false,
+	"github.copilot.enable": {
+		"*": true
+	},
+	"markdown.extension.print.theme": "dark",
+	"workbench.colorTheme": "One Dark Pro Darker",
+	"workbench.activityBar.location": "top",
+	"workbench.editorAssociations": {
+		"*.ppm": "hexEditor.hexedit"
+	},
+}
