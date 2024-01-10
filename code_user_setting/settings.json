@@ -54,7 +54,7 @@
 		"sml": "cd $dir && sml $fileName"
 	},
 	"editor.tokenColorCustomizations": {
-		"comments": "#81aebe"
+		"comments": "#c39dbc"
 	},
 	"emmet.variables": {
 		"lang": "ko"
