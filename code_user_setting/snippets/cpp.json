@@ -3,8 +3,6 @@
 		"prefix": "c!",
 		"body": [
 			"#include <iostream>",
-			"#include <algorithm>",
-			"using namespace std;",
 			"",
 			"int\tmain(void)",
 			"{",
@@ -117,6 +115,6 @@
 			"\t$3",
 			"}"
 		],
-		"description": "dualfor"
+		"description": "auto for"
 	}
 }
